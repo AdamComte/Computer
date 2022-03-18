@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: red;
+  }
+  header {
+    width: 100%;
+    height: 300vh;
+    position: relative;
+  }
+  .cache {
+    background-image: url('../img/MicrosoftTeams-image (2).png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 1.8%;
+    left: 33%;
+    position: absolute;
+    width: 573px;
+    height: 320px;
+    background-color: white;
+    font-size: 30px;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+    transition: 3s all;
+  }
+  .cache > p {
+    padding: 90px;
+    overflow: hidden;
+    width: 0;
+    transition: 3s all;
+  }
+  .vu {
+    width: 573px;
+    height: 320px;
+    background: center / cover no-repeat url(../img/ouv.png);
+    position: absolute;
+    top: 1.8%;
+    left: 33%;
+    opacity: 0;
+    animation: 3s 5s ease-in-out startWindows forwards;
+      pointer-events: none;
+    transition: 3s all;
+  }
+  
+  .excel {
+      background-color: transparent;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 2.2%;
+      left: 35.5%;
+  }
+  
+  .closeBtn {
+      background-color: transparent;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 1.4%;
+      left: 69%;
+  }
+  
+  .linkedIn {
+      background-color: transparent;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 4.8%;
+      left: 36%;
+  }
+  
+  .displayBlock {
+    opacity: 1;
+    transition: 3s all;
+  }
+  
+  .displayBlock > p{
+      width: 100%;
+      transition: 3s all;
+  }
+  
+  .displayNone {
+    opacity: 0 !important;
+    transition: 3s all;
+  }
+  
+  .table {
+    width: 900px;
+    position: absolute;
+    top: 13%;
+    left: 20%;
+    animation: 5s ease-in-out gd forwards;
+  }
+  .tele {
+    position: absolute;
+    width: 610px;
+    top: 1%;
+    left: 32%;
+    animation: 5s ease-in-out hb forwards;
+  }
+  .pot {
+    position: absolute;
+    width: 150px;
+    top: 13%;
+    left: 22%;
+    animation: 5s ease-in-out bh forwards;
+  }
+  .clavier {
+    width: 330px;
+    position: absolute;
+    top: 18%;
+    left: 40%;
+    animation: 5s ease-in-out dg forwards;
+  }
+  .souris {
+    width: 120px;
+    position: absolute;
+    top: 18%;
+    left: 65%;
+    animation: 5s ease-in-out dg forwards;
+  }
+  
+  @keyframes startWindows {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+  
+  @keyframes dg {
+      from {
+          margin-left: 150%;
+      }
+      to {
+          margin-left: 0;
+      }
+  }
+  
+  @keyframes gd {
+      from {
+          margin-left: -150%;
+      }
+      to {
+          margin-left: 0;
+      }
+  }
+  
+  @keyframes hb {
+      from {
+          margin-top: -150%;
+      }
+      to {
+          margin-top: 0;
+      }
+  }
+  
+  @keyframes bh {
+      from {
+          margin-top: 150%;
+      }
+      to {
+          margin-bottom: 0;
+      }
+  }
